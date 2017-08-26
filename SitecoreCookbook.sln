@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreCookbook", "SitecoreCookbook\SitecoreCookbook.csproj", "{479478BB-B99B-413E-AB82-1A6DDEFCCDDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreCookbook.Tests", "SitecoreCookbook.Tests\SitecoreCookbook.Tests.csproj", "{7437E8F3-ACC4-4785-9D01-FE01BACB91B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{479478BB-B99B-413E-AB82-1A6DDEFCCDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479478BB-B99B-413E-AB82-1A6DDEFCCDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479478BB-B99B-413E-AB82-1A6DDEFCCDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479478BB-B99B-413E-AB82-1A6DDEFCCDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7437E8F3-ACC4-4785-9D01-FE01BACB91B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7437E8F3-ACC4-4785-9D01-FE01BACB91B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7437E8F3-ACC4-4785-9D01-FE01BACB91B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7437E8F3-ACC4-4785-9D01-FE01BACB91B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

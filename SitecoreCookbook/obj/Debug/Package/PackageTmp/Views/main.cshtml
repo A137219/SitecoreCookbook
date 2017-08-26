@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc
+<div id="sidemenu">
+    this is modified code .
+    @Html.Sitecore().Rendering("{E354E0EC-1DDE-4B0D-9C92-E58E806F300E}")
+</div>
+
+<div id="header">
+    <a href="/">
+        @Html.Sitecore().Field("Logo", Sitecore.Context.Database.GetItem("/sitecore/content/Global"))
+    </a>
+</div>
+
+<div id="contentarea">
+    this is modicied code .
+    <h1>@Html.Sitecore().Field("Title")</h1>
+    @Html.Sitecore().Field("Body")
+</div>
+
+<div id="footer">
+    @Html.Sitecore().Field("Copyright Text", Sitecore.Context.Database.GetItem("/sitecore/content/Global"))
+</div>

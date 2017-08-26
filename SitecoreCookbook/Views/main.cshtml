@@ -1,0 +1,46 @@
+﻿@using Sitecore.Mvc
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Html.Sitecore().Field("Title", Sitecore.Context.Item, new { DisableWebEdit = true })</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/css/desktop.css" rel="stylesheet" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <a href="/">
+                @Html.Sitecore().Field("Logo", Sitecore.Context.Database.GetItem("/sitecore/Content/Global/Configurations"))
+            </a>
+        </div>
+        <div id="menu">
+
+        </div>
+        <div class="container">
+            <div id="breadcrumb">
+                @Html.Sitecore().Rendering("{F0125AB7-6A5A-4916-A317-2AE555048700}")
+                @*@Html.Sitecore().ViewRendering("/Views/navigation/Breadcrumb.cshtml")*@
+            </div>
+            <div id="sidemenu">
+                @*@Html.Sitecore().Rendering("{1269AD9D-59BC-4A20-8B5B-C1D4C8AF5154}")*@
+
+                @* Alternatives *@
+                @Html.Sitecore().ViewRendering("/Views/Navigation/SideMenu.cshtml")
+                @*@Html.Partial("~/Views/Navigation/SideMenu.cshtml")*@
+            </div>
+            <div id="contentarea">
+                <article>
+                    <h1>@Html.Sitecore().Field("Title")</h1>
+                    @Html.Sitecore().Field("Body")
+                </article>
+            </div>
+            <div id="footer">
+                @Html.Sitecore().Field("Copyright Text", Sitecore.Context.Database.GetItem("/sitecore/Content/Global/Configurations"))
+            </div>
+        </div>
+    </div>
+</body>
+</html>
